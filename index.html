@@ -1,11 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mona Kia</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Mona Kia</h1>
-  <p>Site in progress.</p>
+  <main class="container">
+    <h1>Mona Kia</h1>
+    <p class="tagline">Software • Data • Security • iOS (in progress)</p>
+
+    <section class="cards">
+      <a class="card" href="https://hiredpath.monakia.dev" target="_blank" rel="noreferrer">
+        <h2>HiredPath</h2>
+        <p>Job application tracker (MVP).</p>
+      </a>
+
+      <a class="card" href="https://github.com/mona-kia" target="_blank" rel="noreferrer">
+        <h2>GitHub</h2>
+        <p>Projects & code.</p>
+      </a>
+
+      <a class="card" href="https://www.linkedin.com/in/mona-kia" target="_blank" rel="noreferrer">
+        <h2>LinkedIn</h2>
+        <p>Experience & resume.</p>
+      </a>
+    </section>
+
+    <footer>
+      <small>© <span id="year"></span> Mona Kia</small>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
